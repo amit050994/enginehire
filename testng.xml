@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+	<test name="Login as Admin">
+		<classes>
+			<class name="com.enginehire.framework.testcases.TC_001_Login">
+				<methods>
+					<include name="tc_001_01_Login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Copying the Application form link">
+		<classes>
+			<class name="com.enginehire.framework.testcases.TC_002_Copy_Application_Form_link">
+				<methods>
+					<include name="tc_002_01_Copy_Link" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Submitting the Application form">
+		<classes>
+			<class name="com.enginehire.framework.testcases.TC_003_Submit_Form">
+				<methods>
+					<include name="tc_003_01_SubmitForm" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verifying the submitted Application form with email">
+		<classes>
+			<class name="com.enginehire.framework.testcases.TC_004_Candidates">
+				<methods>
+					<include name="tc_004_01_VerifyForm" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Verifying the Add Template under the Document Template">
+		<classes>
+			<class name="com.enginehire.framework.testcases.TC_005_Add_Template">
+				<methods>
+					<include name="tc_005_01_Add_Template" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
